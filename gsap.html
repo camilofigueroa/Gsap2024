@@ -1,0 +1,39 @@
+<!-- https://gsap.com/resources/position-parameter/ -->
+
+<html>
+    <head>
+        <title>Animaciones por código en javascript - ADSO</title>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
+         <script src="gsap.min.js"></script>
+
+         <style>
+            #elemento{
+                position: absolute;
+                background-color: red;
+            }
+         </style>
+    </head>
+
+    <body>
+
+        <div id="elemento">Hola</div>
+
+        <script>
+
+            let elemento = document.getElementById("elemento");
+
+            TweenMax.to(elemento, 0.5, { left: 500 });     
+            //TweenMax.to(elemento, 1.5, { left: 500, ease: "elastic.out(1,0.3)" });     
+            //TweenMax.to(elemento, 0.5, { left: 500, top: 400, delay: 2 });     
+            //TweenMax.to(elemento, 0.5, { rotation: 30 });     
+            /*TweenMax.delayedCall(1, alTerminar, ["parámetro 1", 2]);
+
+            function alTerminar(v1, v2){
+                console.log("Terminó." + v1 + v2);
+            }*/
+
+        </script>
+
+    </body>
+</html>
